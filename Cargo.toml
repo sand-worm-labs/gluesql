@@ -9,6 +9,7 @@ members = [
   "storages/*",
   "test-suite",
   "utils",
+  "chains-support/*",
 ]
 default-members = [
   "cli",
@@ -19,6 +20,7 @@ default-members = [
   "storages/*",
   "test-suite",
   "utils",
+  "chains-support/*",
 ]
 
 # ref. https://github.com/rustwasm/wasm-pack/issues/1111
@@ -52,4 +54,7 @@ gluesql-mongo-storage = { path = "./storages/mongo-storage", version = "0.16.3" 
 gluesql-parquet-storage = { path = "./storages/parquet-storage", version = "0.16.3" }
 gluesql-file-storage = { path = "./storages/file-storage", version = "0.16.3" }
 gluesql-git-storage = { path = "./storages/git-storage", version = "0.16.3" }
+gluesql-clickhouse-storage = { path = "./storages/clickhouse-storage", version = "0.16.3" }
+gluesql_evm_adapter = { path = "./chains-support/evm-adapter", version = "0.0.1" }
+glueql_sui_adapter = { path = "./chains-support/sui-adapter", version = "0.0.1" }
 utils = { package = "gluesql-utils", path = "./utils", version = "0.16.3" }
