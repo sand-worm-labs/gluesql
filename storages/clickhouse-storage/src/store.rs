@@ -1,6 +1,6 @@
 use {
     crate::{
-     error::{ClickHouseStorageError, OptionExt, ResultExt}, utils::get_primary_key, ClickHouseStorage, 
+    error::{ClickHouseStorageError, OptionExt, ResultExt}, utils::get_primary_key, ClickHouseStorage, 
     },
     async_trait::async_trait,
     futures::{stream, Stream, StreamExt, TryStreamExt},
@@ -12,11 +12,6 @@ use {
         prelude::{Error, Value},
         store::{DataRow, RowIter, Store},
         translate::translate_data_type,
-    },
-    mongodb::{
-        bson::{doc, document::ValueAccessError, Document},
-        options::{FindOptions, ListIndexesOptions},
-        IndexModel,
     },
     serde_json::from_str,
     std::{collections::HashMap, future},

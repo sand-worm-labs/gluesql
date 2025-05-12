@@ -9,10 +9,6 @@ use {
         error::{Error, Result},
         store::{DataRow, Store, StoreMut},
     },
-    mongodb::{
-        bson::{doc, Bson, Document},
-        options::{IndexOptions, ReplaceOptions},
-    },
 };
 
 struct IndexInfo {
